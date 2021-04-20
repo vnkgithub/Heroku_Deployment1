@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Battery-Life-Prediction</title>
 </head>
 
 <body>
@@ -12,17 +12,17 @@
     <div style="color:blue">
         <form action="{{ url_for('predict')}}" method="post">
             <h2>Basic Classifier</h2>
-            <h3>What is min?</h3><br><input id="first" name="min1" required="required">
-            <h3>What is log variance</h3><input id="second" name="log10_Var100_10" required="required">
-            <h3>What is Dis_max?</h3><br><input id="third" name="Dis_max" required="required">
-            <h3>What is Slope?</h3><br><input id="fourth" name="Slope" required="required">
-            <h3>What is Charge time</h3><br><input id="five" name="charge_tym" required="required">
-            <h3>What is Intercept?</h3><br><input id="six" name="Intercept" required="required">
-            <h3>What is integration ?</h3><br><input id="seven" name="Intergration" required="required">          
-            <h3>What is iR_min?</h3><br><input id="eight" name="IR_min" required="required">
-            <h3>What is iR_diff?</h3><br><input id="nine" name="IR_diff" required="required">
+            <h3>What is min?</h3><br><input id="first" name="min1" placeholder="range -0.06 to -0.075" required="required">
+            <h3>What is log variance</h3><input id="second" name="log10_Var100_10" placeholder="range -3.00 to -4.00" required="required">
+            <h3>What is Dis_max?</h3><br><input id="third" name="Dis_max" placeholder="range 1.09 to 1.04 " required="required">
+            <h3>What is Slope?</h3><br><input id="fourth" name="Slope" placeholder="range-0.00014 to -0.00018  " required="required">
+            <h3>What is Charge time</h3><br><input id="five" name="charge_tym" placeholder="range 2200 to 2500 "  required="required">
+            <h3>What is Intercept?</h3><br><input id="six" name="Intercept" placeholder="range 1.076 to 1.15 " required="required">
+            <h3>What is integration ?</h3><br><input id="seven" name="Intergration" placeholder="480233.8779" required="required">          
+            <h3>What is iR_min?</h3><br><input id="eight" name="IR_min" placeholder="range 0.016 to 0.019 " required="required">
+            <h3>What is iR_diff?</h3><br><input id="nine" name="IR_diff" placeholder="range -0.0009 to -0.0015 " required="required">
 
-            <br><br><button id="sub" type="submit ">Calculate the Cycle</button>
+            <br><br><button id="sub" type="submit ">Calculate the Cycle Life</button>
             <br>
 
 
